@@ -44,7 +44,7 @@ my_cur = my_cnx.cursor()
 #streamlit.text(my_data_row)
 
 my_cur.execute("select * from fruit_load_list")
-my_data_row = my_cur.fetchall()
+my_data_rows = my_cur.fetchall()
 streamlit.text("The Fruit Load List Contains:")
 streamlit.text(my_data_row)
 streamlit.header("The fruit load list contains:")
